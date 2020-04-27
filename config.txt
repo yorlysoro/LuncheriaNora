@@ -1,0 +1,4 @@
+Luncheria
+localhost
+3306
+root

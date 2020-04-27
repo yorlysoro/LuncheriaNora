@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Reportes_usuario" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4b25f8e0-10d5-4852-9083-816cd0259676">
+	<property name="com.jaspersoft.studio.data.sql.tables">
+		<![CDATA[bHVuY2hlcmlhNC5lbXBsZWFkb3MgLDEyMywxNSwxNDlhZGYxNy04ZmM1LTQ1MWItYmRkNC1mYzIx
+NDcxNjkyYTc7bHVuY2hlcmlhNC50aXBvX3RlbGVmb25vICwxNSw5MywzZWZhY2M1Ni02ODA1LTQw
+ZGQtYjcwYy0yOWVmMmViYzhmOTI7bHVuY2hlcmlhNC5zdGF0dXMgLDI3OCw5MyxjNTc4NWFiMi03
+ZTI4LTQxNTItOWE2NC01ZTgwMzU5YTlmN2U7]]>
+	</property>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Luncheria"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT luncheria4.empleados.cedula,
+	luncheria4.empleados.nombres,
+	luncheria4.empleados.apellidos,
+	luncheria4.empleados.correo,
+	luncheria4.empleados.telefono,
+	luncheria4.tipo_telefono.nombre,
+	luncheria4.status.nombre
+FROM luncheria4.empleados,
+	luncheria4.status,
+	luncheria4.tipo_telefono
+WHERE 
+	 luncheria4.empleados.tipo_telefono = luncheria4.tipo_telefono.cod 
+	 AND luncheria4.empleados.status = luncheria4.status.cod]]>
+	</queryString>
+	<field name="cedula" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="cedula"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="empleados"/>
+	</field>
+	<field name="nombres" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="nombres"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="empleados"/>
+	</field>
+	<field name="apellidos" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="apellidos"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="empleados"/>
+	</field>
+	<field name="correo" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="correo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="empleados"/>
+	</field>
+	<field name="telefono" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="telefono"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="empleados"/>
+	</field>
+	<field name="nombre" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="nombre"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tipo_telefono"/>
+	</field>
+	<field name="COLUMN_7" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="nombre"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="status"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="100" splitType="Stretch">
+			<staticText>
+				<reportElement x="110" y="0" width="340" height="100" uuid="4e8ffaaa-f1f4-4bdb-9351-e52b3a85c0d2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Malgun Gothic" size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LUNCHERIA NORA C.A.
+REPORTES DE USUARIOS]]></text>
+			</staticText>
+			<image>
+				<reportElement x="7" y="0" width="103" height="100" uuid="87eb1233-eec0-4202-9437-9267f63bb4cd"/>
+				<imageExpression><![CDATA["logo.png"]]></imageExpression>
+			</image>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="430" y="0" width="125" height="30" uuid="9eabd432-6d1c-4d29-b157-c71a525c86d2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Malgun Gothic" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="10" width="79" height="51" forecolor="#FFFFFF" backcolor="#3333FF" uuid="ea9c8211-5909-4096-a84c-561f95e03844">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="83c01674-03e2-4022-8ac8-98819ff30d8a"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Malgun Gothic" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cedula]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="79" y="10" width="79" height="51" forecolor="#FFFFFF" backcolor="#3333FF" uuid="f8aa2e3f-6950-4bb8-bf50-52c04960da87">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e2a9af0f-62d8-4ab2-b997-37285a0cce1f"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Malgun Gothic" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombres]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="158" y="10" width="79" height="51" forecolor="#FFFFFF" backcolor="#3333FF" uuid="1ca83a81-6f7c-4226-a927-9ce069991aae">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4c93602d-d9a6-4202-be29-5a4203294687"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Malgun Gothic" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Apellidos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="237" y="10" width="114" height="51" forecolor="#FFFFFF" backcolor="#3333FF" uuid="7d79b3a2-351e-4368-a342-c02d0f0628fc">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="538b7b97-53a3-494c-9862-8510f1742228"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Malgun Gothic" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Correo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="351" y="10" width="79" height="51" forecolor="#FFFFFF" backcolor="#3333FF" uuid="5bd4bc4b-80e4-4f15-bbd4-d28394151c7e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="64f861f8-b9f8-4ef5-9441-b5f013f690d9"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Malgun Gothic" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telefono]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="430" y="10" width="60" height="51" forecolor="#FFFFFF" backcolor="#3333FF" uuid="4ab96a2c-8bd0-4590-8535-e210ad1230ab">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="60cbaaea-bfab-4cc4-8ec7-f65f3166168b"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Malgun Gothic" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tipo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="490" y="10" width="63" height="51" forecolor="#FFFFFF" backcolor="#3333FF" uuid="230678c4-6bd1-4dd0-b643-68c755209899">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="eea87d27-d8ef-4460-834f-3faabb4fe971"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Malgun Gothic" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Estatus]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="40" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="79" height="30" uuid="d836b0b8-5e9b-466e-84e0-e5515618e979">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="83c01674-03e2-4022-8ac8-98819ff30d8a"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Malgun Gothic" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cedula}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="79" y="0" width="79" height="30" uuid="770046f1-99e1-487d-bd40-994b24788219">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e2a9af0f-62d8-4ab2-b997-37285a0cce1f"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Malgun Gothic" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombres}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="158" y="0" width="79" height="30" uuid="eb7ade85-6390-43a2-961a-bdca1ba5903a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4c93602d-d9a6-4202-be29-5a4203294687"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Malgun Gothic" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{apellidos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="237" y="0" width="113" height="30" uuid="f6f078b5-e396-4c91-b69f-d44acc6efbc5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="538b7b97-53a3-494c-9862-8510f1742228"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Malgun Gothic" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{correo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="351" y="0" width="78" height="30" uuid="f07a8c9f-2a2a-48e8-872a-6a30f7226907">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="64f861f8-b9f8-4ef5-9441-b5f013f690d9"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Malgun Gothic" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{telefono}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="430" y="0" width="60" height="30" uuid="7fa64562-ae46-444d-8b14-0be37ca3bb4d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="60cbaaea-bfab-4cc4-8ec7-f65f3166168b"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Malgun Gothic" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="490" y="0" width="63" height="30" uuid="9c707eb8-bae4-4b34-b90c-2f8ad3d3ead1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="eea87d27-d8ef-4460-834f-3faabb4fe971"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Malgun Gothic" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_7}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="80" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="575" height="1" forecolor="#3333FF" backcolor="#3333FF" uuid="a9ed05a4-35ad-43ba-97d2-e06737a1a899"/>
+			</line>
+			<textField>
+				<reportElement x="250" y="20" width="100" height="20" uuid="3c647eb4-14ba-41a8-91c9-c48534481439"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Malgun Gothic" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="60" width="180" height="20" uuid="c7ddcde9-13b7-4b01-b933-818f62d99ef1"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Malgun Gothic" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LUNCHERIA NORA C.A.]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

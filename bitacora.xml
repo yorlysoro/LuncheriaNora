@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-12-04T19:11:47.689205400Z</date>
+  <millis>1575486707689</millis>
+  <nanos>205400</nanos>
+  <sequence>0</sequence>
+  <logger>luncheria</logger>
+  <level>INFO</level>
+  <class>luncheria.Luncheria</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>INICIANDO EL SISTEMA</message>
+</record>
+<record>
+  <date>2019-12-04T19:11:48.516006900Z</date>
+  <millis>1575486708516</millis>
+  <nanos>6900</nanos>
+  <sequence>1</sequence>
+  <logger>luncheria</logger>
+  <level>INFO</level>
+  <class>luncheria.New_A</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>INICIANDO EL LOGGIN</message>
+</record>
+<record>
+  <date>2019-12-04T19:12:19.731661300Z</date>
+  <millis>1575486739731</millis>
+  <nanos>661300</nanos>
+  <sequence>2</sequence>
+  <logger>luncheria</logger>
+  <level>INFO</level>
+  <class>luncheria.New_menu</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Iniciando el menu</message>
+</record>
+<record>
+  <date>2019-12-04T19:12:22.789266600Z</date>
+  <millis>1575486742789</millis>
+  <nanos>266600</nanos>
+  <sequence>3</sequence>
+  <logger>luncheria</logger>
+  <level>INFO</level>
+  <class>luncheria.factura</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Iniciando la ventana factura</message>
+</record>
+<record>
+  <date>2019-12-04T19:12:26.377272900Z</date>
+  <millis>1575486746377</millis>
+  <nanos>272900</nanos>
+  <sequence>4</sequence>
+  <logger>luncheria</logger>
+  <level>INFO</level>
+  <class>luncheria.ConsultaFactura</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Iniciando la ventana Consultar Factura</message>
+</record>
+<record>
+  <date>2019-12-04T19:12:29.793678800Z</date>
+  <millis>1575486749793</millis>
+  <nanos>678800</nanos>
+  <sequence>5</sequence>
+  <logger>luncheria</logger>
+  <level>INFO</level>
+  <class>luncheria.ConsultaFactura</class>
+  <method>JBtn_salirActionPerformed</method>
+  <thread>18</thread>
+  <message>Saliendo de la ventana Consultar Factura</message>
+</record>
+<record>
+  <date>2019-12-04T19:12:30.979280900Z</date>
+  <millis>1575486750979</millis>
+  <nanos>280900</nanos>
+  <sequence>6</sequence>
+  <logger>luncheria</logger>
+  <level>INFO</level>
+  <class>luncheria.ConsultaFactCliente</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Inciando la ventana consultar clientes</message>
+</record>
+<record>
+  <date>2019-12-04T19:12:34.192886500Z</date>
+  <millis>1575486754192</millis>
+  <nanos>886500</nanos>
+  <sequence>7</sequence>
+  <logger>luncheria</logger>
+  <level>INFO</level>
+  <class>luncheria.AgregarProductos</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Iniciando la ventana AgregarProductos</message>
+</record>
+<record>
+  <date>2019-12-04T19:12:43.240902300Z</date>
+  <millis>1575486763240</millis>
+  <nanos>902300</nanos>
+  <sequence>8</sequence>
+  <logger>luncheria</logger>
+  <level>INFO</level>
+  <class>luncheria.AgregarProductos</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Iniciando la ventana AgregarProductos</message>
+</record>
+<record>
+  <date>2019-12-04T19:12:52.148517800Z</date>
+  <millis>1575486772148</millis>
+  <nanos>517800</nanos>
+  <sequence>9</sequence>
+  <logger>luncheria</logger>
+  <level>INFO</level>
+  <class>luncheria.AgregarProductos</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Iniciando la ventana AgregarProductos</message>
+</record>
+<record>
+  <date>2019-12-04T19:12:58.809729400Z</date>
+  <millis>1575486778809</millis>
+  <nanos>729400</nanos>
+  <sequence>10</sequence>
+  <logger>luncheria</logger>
+  <level>INFO</level>
+  <class>luncheria.AgregarProductos</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Iniciando la ventana AgregarProductos</message>
+</record>
+<record>
+  <date>2019-12-04T19:13:14.097756100Z</date>
+  <millis>1575486794097</millis>
+  <nanos>756100</nanos>
+  <sequence>11</sequence>
+  <logger>luncheria</logger>
+  <level>INFO</level>
+  <class>luncheria.factura</class>
+  <method>guardar</method>
+  <thread>18</thread>
+  <message>Se ha guardado una factura</message>
+</record>
+<record>
+  <date>2019-12-04T19:13:16.125759600Z</date>
+  <millis>1575486796125</millis>
+  <nanos>759600</nanos>
+  <sequence>12</sequence>
+  <logger>luncheria</logger>
+  <level>INFO</level>
+  <class>luncheria.ConsultaFactura</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Iniciando la ventana Consultar Factura</message>
+</record>
+<record>
+  <date>2019-12-04T19:13:18.200563200Z</date>
+  <millis>1575486798200</millis>
+  <nanos>563200</nanos>
+  <sequence>13</sequence>
+  <logger>luncheria</logger>
+  <level>INFO</level>
+  <class>luncheria.ConsultaFactura</class>
+  <method>JBtn_salirActionPerformed</method>
+  <thread>18</thread>
+  <message>Saliendo de la ventana Consultar Factura</message>
+</record>
+<record>
+  <date>2019-12-04T19:13:24.908574900Z</date>
+  <millis>1575486804908</millis>
+  <nanos>574900</nanos>
+  <sequence>14</sequence>
+  <logger>luncheria</logger>
+  <level>INFO</level>
+  <class>luncheria.ConsultaFactura</class>
+  <method>&lt;init&gt;</method>
+  <thread>18</thread>
+  <message>Iniciando la ventana Consultar Factura</message>
+</record>
+<record>
+  <date>2019-12-04T19:13:26.138577300Z</date>
+  <millis>1575486806138</millis>
+  <nanos>577300</nanos>
+  <sequence>15</sequence>
+  <logger>luncheria</logger>
+  <level>INFO</level>
+  <class>luncheria.ConsultaFactura</class>
+  <method>JBtn_salirActionPerformed</method>
+  <thread>18</thread>
+  <message>Saliendo de la ventana Consultar Factura</message>
+</record>
+<record>
+  <date>2019-12-04T19:17:30.045002500Z</date>
+  <millis>1575487050045</millis>
+  <nanos>2500</nanos>
+  <sequence>16</sequence>
+  <logger>luncheria</logger>
+  <level>INFO</level>
+  <class>luncheria.New_menu</class>
+  <method>jButton1ActionPerformed</method>
+  <thread>18</thread>
+  <message>Saliendo del menu</message>
+</record>
+</log>
